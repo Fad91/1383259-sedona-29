@@ -1,84 +1,87 @@
-<!DOCTYPE html>
-<html lang="ru">
+ <!DOCTYPE html>
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a><img src="https://via.placeholder.com/138x70" alt="City of Sedona"></a>
-      <ul>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-nav">
+      <img class="main-nav-logo" src="https://via.placeholder.com/138x70" alt="City of Sedona">
+      <ul class="site-nav">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <img src="https://via.placeholder.com/1200x509"
       alt="Welcome to the georgeous Sedona, because the grand canyon sucks!">
+      <section class="reasons">
     <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <ul>
-      <li>
-        <h2>Настоящий городок</h2>
+    <ul class="reasons-list">
+      <li class="reasons-item">
+        <h3>Настоящий городок</h3>
         <p>— №1 —<br>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         <img src="https://via.placeholder.com/800x256" alt="Седона">
-        <ul>
-          <li>
+        <ul class="reasons-list-row-icon">
+          <li class="reasons-item-row-icon">
             <!--иконка дома декоративная, добавим ее с помощю css позже-->
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="reasons-item-row-icon">
             <!--иконка бургера декоративная, добавим ее с помощю css позже-->
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="reasons-item-row-icon">
             <!--иконка сувениров декоративная, добавим ее с помощю css позже-->
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </li>
-      <li>
-        <h2>Там есть Мост дьявола</h2>
+      <li class="reasons-item">
+        <h3>Там есть Мост дьявола</h3>
         <p>— №2 —<br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         <img src="https://via.placeholder.com/800x256" alt="Мост дьявола">
       </li>
-      <li>
-        <h2>небольшая площадь</h2>
+      <li class="reasons-item-row">
+        <h3>небольшая площадь</h3>
         <p>— №3 —<br>Все достопримечательности находятся очень близко</p>
       </li>
-      <li>
-        <h2>Красивая дорога</h2>
+      <li class="reasons-item-row">
+        <h3>Красивая дорога</h3>
         <p>— №4 —<br>Ехать в седону из лас-вегаса совсем не скучно!</p>
       </li>
-      <li>
-        <h2>Мало туристов</h2>
+      <li class="reasons-item-row">
+        <h3>Мало туристов</h3>
         <p>— №5 —<br>Большинство едет в гранд каньон и толпится там</p>
       </li>
     </ul>
-
-    <div>
+  </section>
+    <section clas="hotel-search-section">
       <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения остиниц в седоне</p>
+      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <img src="https://via.placeholder.com/1199x594" alt="Карта">
       <!--Тут будет форма поиска гостиницы-->
-    </div>
+    </section>
   </main>
-  <footer>
-    <div>
+  <footer class="main-footer">
+    <div class="page-footer">
       <p>#visitSEDONA</p>
       <a href="tel:+7(495)666-01-66">+7(495)666-01-66"</a>
-      <ul>
-        <li><a href="#">Twitter</a></li>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Twitter</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Youtube</a></li>
       </ul>
