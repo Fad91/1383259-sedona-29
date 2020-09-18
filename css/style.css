@@ -1,6 +1,9 @@
 :root {
   --basic-white: #FFFFFF;
-  --reasons-blue: #81B3D2;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-grey: #EEEEEE;
+  --text-grey: #333333;
 }
 
 .page-body {
@@ -22,20 +25,61 @@
 }
 
 /* main */
-.reasons-title {
+
+.main-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
+.reasons-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--text-grey)
+}
+
+.reasons-list {
+  list-style: none;
+}
+
 .reasons-item {
-  background: var(--reasons-blue);
+  background: var(--basic-blue);
+}
+
+.reasons-item-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reasons-item-text {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .reasons-list-row-icon {
   background: var(--basic-white);
-  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   list-style: none;
+}
+
+.reasons-list-row {
+  background: var(--basic-grey);
+}
+
+/* footer */
+
+.contacts-text,
+.contacts-phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts-site {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
 }
