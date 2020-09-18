@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
           <label for="pool">Бассейн</label></li>
         <li><input type="checkbox" name="parking" id="parking">
           <label for="parking">Парковка</label></li>
-        <li><input type="checkbox" name="wi-fi" id="pool">
+        <li><input type="checkbox" name="wi-fi" id="wi-fi">
           <label for="wi-fi">Wi-Fi</label></li>
       </ul>
       <p>Тип жилья:</p>
@@ -44,19 +47,38 @@
       <input type="range" id="costperday" name="costperday" min="0" max="3000" step="1">
       <button type="button">Показать</button>
     </div>
-    <div>
-      <p>НАЙДЕНО: 3</p> 
-      <p>Сортировка:</p> 
-      <ul> 
-        <li> 
-          <button type="button">По цене</button>
+    <section>
+      <h1>НАЙДЕНО: 3</h1>
+      <p>Сортировка:</p>
+      <ul>
+        <li>
+          <a href="#">По цене</a>
         </li>
-        <li> <button type="button">По типу</button></li>
+        <li> <a href="#">По типу</a></li>
 
-        <li> <button type="button">По рейтингу</button></li>
+        <li> <a href="#">По рейтингу</a></li>
+      </ul>
+      <ul>
+        <li><img src="https://via.placeholder.com/135x90" alt="">
+          <h2>Amara Resort & Spa</h2>
+          <p>Гостиница</p>
+          <p>От 4000р.</p>
+          <p>Рейтинг 8,5</p>
+        </li>
+        <li><img src="https://via.placeholder.com/135x90" alt="">
+          <h2>Desert Quail Inn</h2>
+          <p>Мотель</p>
+          <p>От 3000р.</p>
+          <p>Рейтинг 8,9</p>
+        </li>
+        <li><img src="https://via.placeholder.com/135x90" alt="">
+          <h2>Villas at Poco Diablo</h2>
+          <p>Апартаменты</p>
+          <p>От 2000р.</p>
+          <p>Рейтинг 9,2</p>
         </li>
       </ul>
-    </div>
+    </section>
 
   </main>
   <footer>
