@@ -1,0 +1,41 @@
+:root {
+  --basic-white: #FFFFFF;
+  --reasons-blue: #81B3D2;
+}
+
+.page-body {
+  font-family: "PT Sans", sans-serif;
+  background: var(--basic-white);
+  text-transform: uppercase;
+}
+
+/* header */
+
+.main-nav {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.site-nav {
+  list-style: none;
+}
+
+/* main */
+.reasons-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons-item {
+  background: var(--reasons-blue);
+}
+
+.reasons-list-row-icon {
+  background: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  list-style: none;
+}
