@@ -4,6 +4,7 @@
   --basic-brown: #766357;
   --basic-grey: #EEEEEE;
   --text-grey: #333333;
+  --basic-black: #000000;
 }
 
 .page-body {
@@ -11,7 +12,7 @@
   background: var(--basic-white);
   text-transform: uppercase;
 }
-
+/* index.html */
 /* header */
 
 .main-nav {
@@ -22,6 +23,11 @@
 
 .site-nav {
   list-style: none;
+}
+
+.site-nav-link {
+  color: var(--basic-black);
+  text-decoration: none;
 }
 
 /* main */
@@ -35,8 +41,7 @@
 .reasons-text {
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
-  color: var(--text-grey)
+  line-height: 21px;
 }
 
 .reasons-list {
@@ -69,6 +74,18 @@
   background: var(--basic-grey);
 }
 
+.hotel-search-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.hotel-search-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 /* footer */
 
 .contacts-text,
@@ -76,10 +93,89 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-black);
 }
+
+.footer-social{
+  list-style: none;
+}
+
 
 .contacts-site {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+/*hotels.html*/
+
+
+.hotels-filter{
+background: url("../img/hotels-filter-background.jpg") no-repeat var(--basic-blue);
+background-size: cover;
+color: var(--basic-white)
+}
+
+.hotels-filter-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  
+}
+
+.hotels-filter-list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.filter-link {
+  color: var(--basic-white);
+  text-decoration: none;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  box-sizing: border-box;
+  padding:1px 15px;
+
+}
+
+.hotels-filter-result-title,
+.hotels-list-link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-list,
+.hotels-list {
+  list-style: none;
+}
+
+.sort-item-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.hotels-list-link {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.details-button{
+  background: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.booking-button{
+  background: var(--basic-brown);
+  color: var(--basic-white);
 }
