@@ -24,29 +24,31 @@
   </header>
   <main class="container">
     <div class="hotels-filter">
-      <p class="hotels-filter-title">Инфраструктура:</p>
-      <ul class="hotels-filter-list">
-        <li><input type="checkbox" name="pool" id="pool" checked>
-          <label for="pool">Бассейн</label></li>
-        <li><input type="checkbox" name="parking" id="parking">
-          <label for="parking">Парковка</label></li>
-        <li><input type="checkbox" name="wi-fi" id="wi-fi">
-          <label for="wi-fi">Wi-Fi</label></li>
-      </ul>
-      <p class="hotels-filter-title">Тип жилья:</p>
-      <ul class="hotels-filter-list">
-        <li><input type="checkbox" name="hotel" id="hotel" checked>
-          <label for="hotel">Гостиница</label></li>
-        <li><input type="checkbox" name="motel" id="motel" checked>
-          <label for="motel">Мотель</label></li>
-        <li><input type="checkbox" name="apartments" id="apartments" checked>
-          <label for="apartments">Апартаменты</label></li>
-      </ul>
-      <label class="hotels-filter-title" for="costperday">Стоимость в сутки(Р):</label>
-      <output name="costperday">От 0</output>
-      <output name="costperday">До 3000</output>
-      <input type="range" id="costperday" name="costperday" min="0" max="3000" step="1">
-      <a class="filter-link" href="#">Показать</a>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <p class="hotels-filter-title">Инфраструктура:</p>
+        <ul class="hotels-filter-list">
+          <li><input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label></li>
+          <li><input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label></li>
+          <li><input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label></li>
+        </ul>
+        <p class="hotels-filter-title">Тип жилья:</p>
+        <ul class="hotels-filter-list">
+          <li><input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label></li>
+          <li><input type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">Мотель</label></li>
+          <li><input type="checkbox" name="apartments" id="apartments" checked>
+            <label for="apartments">Апартаменты</label></li>
+        </ul>
+        <label class="hotels-filter-title" for="costperday">Стоимость в сутки(Р):</label>
+        <output name="costperday">От 0</output>
+        <output name="costperday">До 3000</output>
+        <input type="range" id="costperday" name="costperday" min="0" max="3000" step="1">
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
     </div>
     <section class="hotels-filter-result">
       <h1 class="hotels-filter-result-title">НАЙДЕНО: 3</h1>
@@ -62,24 +64,24 @@
           <p>Гостиница</p>
           <p>От 4000р.</p>
           <p>Рейтинг: 8,5</p>
-          <button class="details-button" type="button">Подробнее</button>
-          <button class="booking-button" type="button">Забронировать</button>
+          <a class="details-link" href="#">Подробнее</a>
+          <a class="booking-link" href="#">Забронировать</a>
         </li>
-        <li><img src="img/desert-quali-inn-image.jpg" width="135" height="90"  alt="">
+        <li><img src="img/desert-quali-inn-image.jpg" width="135" height="90" alt="">
           <a class="hotels-list-link" href="#">Desert Quail Inn</a>
           <p>Мотель</p>
           <p>От 3000р.</p>
           <p>Рейтинг: 8,9</p>
-          <button class="details-button" type="button">Подробнее</button>
-          <button class="booking-button" type="button">Забронировать</button>
+          <a class="details-link" href="#">Подробнее</a>
+          <a class="booking-link" href="#">Забронировать</a>
         </li>
         <li><img src="img/villas-at-poco-image.jpg" width="135" height="90" alt="">
           <a class="hotels-list-link" href="#">Villas at Poco Diablo</a>
           <p>Апартаменты</p>
           <p>От 2000р.</p>
           <p>Рейтинг: 9,2</p>
-          <button class="details-button" type="button">Подробнее</button>
-          <button class="booking-button" type="button">Забронировать</button>
+          <a class="details-link" href="#">Подробнее</a>
+          <a class="booking-link" href="#">Забронировать</a>
         </li>
       </ul>
     </section>
@@ -100,4 +102,5 @@
     </div>
   </footer>
 </body>
+
 </html>

@@ -7,11 +7,24 @@
   --basic-black: #000000;
 }
 
+.page {
+  min-width: 1280px;
+}
+
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   font-family: "PT Sans", sans-serif;
   background: var(--basic-white);
   text-transform: uppercase;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  align-content: start;
 }
+
 /* index.html */
 /* header */
 
@@ -21,8 +34,26 @@
   line-height: 26px;
 }
 
+.main-nav-logo{
+  position: absolute;
+  top:0;
+  left: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
 .site-nav {
+  margin-right: 20px;
+  margin-left: 20px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style: none;
+  
 }
 
 .site-nav-link {
@@ -38,6 +69,11 @@
   line-height: 26px;
 }
 
+.reasons{
+  text-align: center;
+}
+
+
 .reasons-text {
   font-weight: normal;
   font-size: 14px;
@@ -45,12 +81,18 @@
 }
 
 .reasons-list {
+  padding:0;
+  margin: 0 auto;
   list-style: none;
 }
+
+
 
 .reasons-item {
   background: var(--basic-blue);
 }
+
+
 
 .reasons-item-title {
   font-weight: bold;
@@ -59,19 +101,46 @@
 }
 
 .reasons-item-text {
+  text-align:center;
   font-size: 14px;
   line-height: 21px;
 }
 
 .reasons-list-row-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
   list-style: none;
+  
+  margin:0 auto;
+  padding:0;
+}
+
+.reasons-item-row-icon {
+  display:grid;
+  margin:auto;
+  padding:0;
+
 }
 
 .reasons-list-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
   background: var(--basic-grey);
+  margin:0 auto;
+  padding: 0;
+}
+
+.reasons-item-row {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hotel-search-section{
+  text-align:center;
 }
 
 .hotel-search-title {
@@ -88,6 +157,11 @@
 
 /* footer */
 
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .contacts-text,
 .contacts-phone {
   font-weight: bold;
@@ -97,7 +171,7 @@
   color: var(--basic-black);
 }
 
-.footer-social{
+.footer-social {
   list-style: none;
 }
 
@@ -111,17 +185,17 @@
 /*hotels.html*/
 
 
-.hotels-filter{
-background: url("../img/hotels-filter-background.jpg") no-repeat var(--basic-blue);
-background-size: cover;
-color: var(--basic-white)
+.hotels-filter {
+  background: url("../img/hotels-filter-background.jpg") no-repeat var(--basic-blue);
+  background-size: cover;
+  color: var(--basic-white)
 }
 
 .hotels-filter-title {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
-  
+
 }
 
 .hotels-filter-list {
@@ -131,15 +205,15 @@ color: var(--basic-white)
   list-style: none;
 }
 
-.filter-link {
+.filter-button {
   color: var(--basic-white);
   text-decoration: none;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   font-size: 14px;
   line-height: 21px;
-  box-sizing: border-box;
-  padding:1px 15px;
+  padding: 5px 25px;
+  background-color: inherit;
 
 }
 
@@ -170,12 +244,37 @@ color: var(--basic-white)
   text-decoration: none;
 }
 
-.details-button{
+.details-link {
   background: var(--basic-blue);
   color: var(--basic-white);
 }
 
-.booking-button{
+.booking-link {
   background: var(--basic-brown);
   color: var(--basic-white);
+}
+
+.details-link,
+.booking-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+/* Modal */
+
+.modal-title,
+.show-button {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.tour-date-list {
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
 }
