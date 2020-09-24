@@ -63,13 +63,6 @@
 
 /* main */
 
-.main-background::after {
-  content: "";
-  background-image: url(../img/main-background-decorate.svg);
-  z-index:1;
-  position: absolute;
-  top: 170px;
-}
 
 .main-title {
   font-weight: bold;
@@ -91,6 +84,12 @@
 .reasons-with-image-wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  
+}
+
+.reasons-with-image-wrapper-reverse {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .reasons-list {
@@ -130,7 +129,6 @@
   font-size: 21px;
   line-height: 21px;
   list-style: none;
-
   margin: 0 auto;
   padding: 0;
 }
@@ -282,11 +280,26 @@
 
 /* Modal */
 
+.modal{
+  width: 568px;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+
 .modal-title,
-.show-button {
+.search-button {
+  text-align: center;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.modal-title {
+  padding: 30px 135px;
+  color: var(--basic-white);
+  background: var(--basic-brown);
 }
 
 .tour-date-list {
@@ -294,4 +307,12 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+}
+
+.search-button{
+  margin-left: 55px;
+  margin-right: 55px;
+  width: 458px;
+  margin:0 auto;
+  background: var(--basic-blue);
 }
