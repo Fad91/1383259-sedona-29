@@ -34,9 +34,9 @@
   line-height: 26px;
 }
 
-.main-nav-logo{
+.main-nav-logo {
   position: absolute;
-  top:0;
+  top: 0;
   left: 640px;
   margin: 0;
   padding: 0;
@@ -53,7 +53,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
-  
+
 }
 
 .site-nav-link {
@@ -63,13 +63,21 @@
 
 /* main */
 
+.main-background::after {
+  content: "";
+  background-image: url(../img/main-background-decorate.svg);
+  z-index:1;
+  position: absolute;
+  top: 170px;
+}
+
 .main-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-.reasons{
+.reasons {
   text-align: center;
 }
 
@@ -80,13 +88,16 @@
   line-height: 21px;
 }
 
+.reasons-with-image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .reasons-list {
-  padding:0;
+  padding: 0;
   margin: 0 auto;
   list-style: none;
 }
-
-
 
 .reasons-item {
   background: var(--basic-blue);
@@ -101,9 +112,15 @@
 }
 
 .reasons-item-text {
-  text-align:center;
+  display: grid;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
+}
+
+.reasons-item-image {
+  display: grid;
+  align-self: end;
 }
 
 .reasons-list-row-icon {
@@ -113,15 +130,15 @@
   font-size: 21px;
   line-height: 21px;
   list-style: none;
-  
-  margin:0 auto;
-  padding:0;
+
+  margin: 0 auto;
+  padding: 0;
 }
 
 .reasons-item-row-icon {
-  display:grid;
-  margin:auto;
-  padding:0;
+  display: grid;
+  margin: auto;
+  padding: 0;
 
 }
 
@@ -130,7 +147,7 @@
   grid-template-columns: repeat(3, 1fr);
   list-style: none;
   background: var(--basic-grey);
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -139,8 +156,8 @@
   padding: 0;
 }
 
-.hotel-search-section{
-  text-align:center;
+.hotel-search-section {
+  text-align: center;
 }
 
 .hotel-search-title {
