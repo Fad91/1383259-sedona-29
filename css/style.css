@@ -9,6 +9,7 @@
 
 .page {
   min-width: 1280px;
+  background-color: var(--basic-grey);
 }
 
 .page-body {
@@ -17,7 +18,7 @@
   font-family: "PT Sans", sans-serif;
   background: var(--basic-white);
   text-transform: uppercase;
-  width: 1200px;
+  max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
@@ -28,6 +29,7 @@
 /* index.html */
 /* header */
 
+
 .main-nav {
   font-weight: bold;
   font-size: 14px;
@@ -37,8 +39,8 @@
 .main-nav-logo {
   position: absolute;
   top: 0;
-  left: 640px;
-  margin: 0;
+  left: 600px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -47,16 +49,14 @@
 }
 
 .site-nav {
-  margin-right: 20px;
-  margin-left: 20px;
-  column-gap: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   list-style: none;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .site-nav-link {
+
   color: var(--basic-black);
   text-decoration: none;
 }
@@ -72,86 +72,158 @@
 
 .reasons {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 
 .reasons-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 51px;
 }
 
-.reasons-with-image-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  
-}
 
-.reasons-with-image-wrapper-reverse {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
 
 .reasons-list {
+  display: flex;
   padding: 0;
   margin: 0 auto;
   list-style: none;
 }
 
-.reasons-item {
-  background: var(--basic-blue);
+.reasons-with-image-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.reasons-with-image-reverse-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.reasons-with-image-reverse {
+  display: flex;
+  list-style: none;
 }
 
 
+.reasons-item {
+  max-height: 256px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.reasons-item-reverse {
+  max-height: 256px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--basic-blue);
+  color: var(--basic-white);
+
+}
+
 
 .reasons-item-title {
-  font-weight: bold;
+  width: 400px;
+  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
 }
 
+.reasons-item-title-reverse {
+  width: 160px;
+  height: 49px;
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+
+}
+
 .reasons-item-text {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-height: 256px;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  margin-top: 23px;
+}
+
+.reasons-item-text-reverse {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-height: 256px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .reasons-item-image {
-  display: grid;
-  align-self: end;
+  height: 256px;
+  width: 800px;
 }
 
 .reasons-list-row-icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
   background: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 82px;
 }
 
 .reasons-item-row-icon {
-  display: grid;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   padding: 0;
+
+}
+
+.reasons-list-row-wrapper {
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .reasons-list-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   list-style: none;
   background: var(--basic-grey);
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 58px;
 }
 
 .reasons-item-row {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  padding-top: 47px;
+  max-width: 400px;
+  height: 256px;
 }
 
 .hotel-search-section {
@@ -168,13 +240,15 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 78px;
 }
 
 /* footer */
 
 .contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contacts-text,
@@ -280,7 +354,7 @@
 
 /* Modal */
 
-.modal{
+.modal {
   width: 568px;
   height: 100%;
   margin: 0 auto;
@@ -309,10 +383,10 @@
   line-height: 26px;
 }
 
-.search-button{
+.search-button {
   margin-left: 55px;
   margin-right: 55px;
   width: 458px;
-  margin:0 auto;
+  margin: 0 auto;
   background: var(--basic-blue);
 }
