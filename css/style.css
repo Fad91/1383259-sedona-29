@@ -10,20 +10,18 @@
 .page {
   min-width: 1280px;
   background-color: var(--basic-grey);
+ 
 }
 
 .page-body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   font-family: "PT Sans", sans-serif;
   background: var(--basic-white);
   text-transform: uppercase;
-  max-width: 1200px;
+  width: 1200px;
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  align-content: start;
 }
 
 /* index.html */
@@ -37,11 +35,11 @@
 }
 
 .main-nav-logo {
-  position: absolute;
-  top: 0;
-  left: 600px;
+  z-index: 1;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .visually-hidden {
@@ -53,17 +51,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav-link {
-
+  padding: 0;
   color: var(--basic-black);
   text-decoration: none;
 }
 
 /* main */
 
-
+/* общие  */
 .main-title {
   font-weight: bold;
   font-size: 21px;
@@ -94,63 +94,12 @@
   list-style: none;
 }
 
+/* Первая причина */
+
 .reasons-with-image-wrapper {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
-}
-
-.reasons-with-image-reverse-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.reasons-with-image-reverse {
-  display: flex;
-  list-style: none;
-}
-
-
-.reasons-item {
-  max-height: 256px;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--basic-blue);
-  color: var(--basic-white);
-}
-
-.reasons-item-reverse {
-  max-height: 256px;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--basic-blue);
-  color: var(--basic-white);
-
-}
-
-
-.reasons-item-title {
-  width: 400px;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.reasons-item-title-reverse {
-  width: 160px;
-  height: 49px;
-  max-width: 400px;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-
-
 }
 
 .reasons-item-text {
@@ -162,58 +111,110 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-top: 23px;
+}
+
+.reasons-item-title {
+  width: 400px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.reasons-item-image {
+  display: flex;
+  height: 256px;
+  width: 100%;
+}
+
+.reasons-item {
+  max-height: 256px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+
+/* Вторая причина */
+
+
+.reasons-with-image-reverse-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 256px;
+}
+
+.reasons-with-image-reverse {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+}
+
+
+.reasons-item-reverse {
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--basic-blue);
+  color: var(--basic-white);
+  width: 100%;
+}
+
+
+.reasons-item-title-reverse {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+
 }
 
 .reasons-item-text-reverse {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  max-height: 256px;
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
 
-.reasons-item-image {
-  height: 256px;
-  width: 800px;
-}
+/* список с иконками */
 
 .reasons-list-row-icon {
   display: flex;
   justify-content: space-around;
-  background: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  margin-bottom: 82px;
 }
 
 .reasons-item-row-icon {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-
 }
+
+/* рядный список без иконок */
 
 .reasons-list-row-wrapper {
   display: flex;
   justify-content: space-between;
+  background: var(--basic-grey);
 
 }
 
 .reasons-list-row {
   display: flex;
   list-style: none;
-  background: var(--basic-grey);
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 58px;
 }
 
 .reasons-item-row {
@@ -227,6 +228,7 @@
 }
 
 .hotel-search-section {
+  margin-top: 58px;
   text-align: center;
 }
 
