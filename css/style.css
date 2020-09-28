@@ -26,45 +26,75 @@
 
 /* index.html */
 /* header */
+.main-nav{
+display: flex;
+}
 
-
-.main-nav {
+.main-nav-wrapper {
+  display: flex;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  justify-content: space-between;
+  width: 1200px;
 }
 
 .main-nav-logo {
-  z-index: 1;
-  margin: 0 auto;
-  padding: 0;
+  width: 138px;
   display: flex;
   justify-content: center;
+  order: 1;
+  height: 57px;
+  z-index: 1;
+  margin: 0 auto;
+  margin: 0 30px;
 }
 
 .visually-hidden {
   visibility: hidden;
 }
 
-.site-nav {
-  list-style: none;
+.site-nav-wrapper {
+  width: 500px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  height: 57px;
+  order:0;
+}
+
+.site-nav,
+.site-nav-right{
+  display: flex;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.site-nav-wrapper-right{
+  justify-content: space-around;
+  width: 500px;
+  display: flex;
+  order: 2;
+}
+
 .site-nav-link {
-  padding: 0;
+  display: flex;
   color: var(--basic-black);
   text-decoration: none;
+  padding:15px 75px;
 }
 
 /* main */
 
 /* общие  */
+.background-svg{
+  position: absolute;
+  z-index: 1;
+  left: 75px;
+  top: 510px;
+}
 .main-title {
+  padding:0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -227,12 +257,22 @@
   height: 256px;
 }
 
+.reasons-item-title-row {
+  padding-top: 47px;
+  width: 400px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+
+/* секция выбора отеля и дат */
 .hotel-search-section {
-  margin-top: 58px;
   text-align: center;
 }
 
 .hotel-search-title {
+  padding-top: 58px;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
@@ -357,8 +397,11 @@
 /* Modal */
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 568px;
-  height: 100%;
+  height: 481px;
   margin: 0 auto;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -366,6 +409,7 @@
 
 .modal-title,
 .search-button {
+  padding: 0;
   text-align: center;
   font-weight: bold;
   font-size: 21px;
@@ -373,12 +417,19 @@
 }
 
 .modal-title {
-  padding: 30px 135px;
+  width: 100%;
+  max-height: 85px;
+  margin: 0 auto;
+  padding: 30px 0;
   color: var(--basic-white);
   background: var(--basic-brown);
 }
 
 .tour-date-list {
+  display: flex;
+  height: 395px;
+  justify-content: space-around;
+  flex-direction: column;
   list-style: none;
   font-weight: bold;
   font-size: 14px;
