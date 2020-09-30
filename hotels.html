@@ -11,29 +11,40 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-nav">
-      <a class="main-nav-logo" href="index.html"><img src="/img/logo.png" width="138" height="70"
-          alt="City of Sedona"></a>
-      <ul class="site-nav">
-        <li><a class="site-nav-link" href="#">Информация</a></li>
-        <li><a class="site-nav-link" href="#">Фото и видео</a></li>
-        <li><a class="site-nav-link" href="#">Карта штата</a></li>
-        <li><a class="site-nav-link" href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
+    <div class="main-nav-wrapper">
+      <nav class="main-nav">
+        <div class="main-nav-logo">
+          <a class="main-nav-logo-link" href="index.html"><img src="/img/logo.png" width="138" height="70" alt="City of Sedona"></a></div>
+        <div class="site-nav-wrapper">
+          <ul class="site-nav">
+            <li><a class="site-nav-link" href="#">Информация</a></li>
+            <li><a class="site-nav-link" href="#">Фото и видео</a></li>
+          </ul>
+        </div>
+        <div class="site-nav-wrapper-right">
+          <ul class="site-nav-right">
+            <li><a class="site-nav-link" href="#">Карта штата</a></li>
+            <li><a class="site-nav-link" href="#">Гостиницы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="container">
-    <div class="hotels-filter">
       <form action="https://echo.htmlacademy.ru/" method="get">
+        <div class="hotels-filter">
+        <div class="infrastructure">
         <p class="hotels-filter-title">Инфраструктура:</p>
         <ul class="hotels-filter-list">
-          <li><input type="checkbox" name="pool" id="pool" checked>
+          <li class="hotels-filter-item"><input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label></li>
-          <li><input type="checkbox" name="parking" id="parking">
+          <li class="hotels-filter-item"><input type="checkbox" name="parking" id="parking">
             <label for="parking">Парковка</label></li>
-          <li><input type="checkbox" name="wi-fi" id="wi-fi">
+          <li class="hotels-filter-item"><input type="checkbox" name="wi-fi" id="wi-fi">
             <label for="wi-fi">Wi-Fi</label></li>
         </ul>
+      </div>
+      <div class="type-of-hotel">
         <p class="hotels-filter-title">Тип жилья:</p>
         <ul class="hotels-filter-list">
           <li><input type="checkbox" name="hotel" id="hotel" checked>
@@ -43,14 +54,18 @@
           <li><input type="checkbox" name="apartments" id="apartments" checked>
             <label for="apartments">Апартаменты</label></li>
         </ul>
+      </div>
+      <div class="cost-filter">
         <label class="hotels-filter-title" for="costperday">Стоимость в сутки(Р):</label>
         <output name="costperday">От 0</output>
         <output name="costperday">До 3000</output>
         <input type="range" id="costperday" name="costperday" min="0" max="3000" step="1">
         <button class="filter-button" type="submit">Показать</button>
-      </form>
+      </div>
     </div>
+  </form>
     <section class="hotels-filter-result">
+      <div class="hotels-filter-result-wrapper">
       <h1 class="hotels-filter-result-title">НАЙДЕНО: 3</h1>
       <p class="sort">Сортировка:</p>
       <ul class="sort-list">
@@ -58,6 +73,7 @@
         <li class="sort-item"><a class="sort-item-link" href="#">По типу</a></li>
         <li class="sort-item"><a class="sort-item-link" href="#">По рейтингу</a></li>
       </ul>
+    </div>
       <ul class="hotels-list">
         <li><img src="img/amara-resort-image.jpg" width="135" height="90" alt="">
           <a class="hotels-list-link" href="#">Amara Resort & Spa</a>
@@ -89,16 +105,18 @@
   </main>
   <footer class="page-footer main-footer">
     <div class="contacts">
-      <p class="contacts-text">#visitSEDONA</p>
-      <a class="contacts-phone" href="tel:+7(495)666-01-66">+7(495)666-01-66</a>
+      <p class="contacts-text">#visitSEDONA<br>
+        <a class="contacts-phone" href="tel:+7(495)666-01-66">+7(495)666-01-66</a></p>
       <ul class="footer-social">
         <li><a class="social-button" href="#">Twitter</a></li>
         <li><a class="social-button" href="#">Facebook</a></li>
         <li><a class="social-button" href="#">Youtube</a></li>
       </ul>
-      <p class="contacts-site">Website by</p>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="/img/logo-htmlacademy.svg" width="114"
-          height="40" alt="html Academy"></a>
+      <p class="contacts-site">Website by
+        <a class="contacts-site-link" href="https://htmlacademy.ru/intensive/htmlcss"><img
+            src="/img/logo-htmlacademy.svg" width="114" height="40" alt="html Academy"></a></p>
+    </div>
+  </footer>
     </div>
   </footer>
 </body>

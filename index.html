@@ -127,17 +127,26 @@
    <section class="modal">
      <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В седоне</h2>
      <form action="https://echo.htmlacademy.ru/" method="GET">
+      <div class="wrapper">
+      <div class="tour-date-list-wrapper">
        <ul class="tour-date-list">
          <li><label for="arrival-date">Дата заезда:</label>
            <input type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2017"></li>
          <li><label for="departure-date">Дата выезда:</label>
            <input type="text" name="departure-date" id="departure-date" value="4 Июля 2017"></li>
+          </ul>
+          </div>
+          <div class="tourist-counter-wrapper">
+            <ul class="tourist-counter">
          <li><label for="adults-count">Взрослые:</label>
-           <input type="number" name="adults-count" id="adults-count" min="0" step="1" value="2"></li>
+           <input type="text" name="adults-count" id="adults-count" min="0" step="1" value="2"></li>
          <li><label for="kids-count">Дети:</label>
-           <input type="number" name="kids-count" id="kids-count" min="0" step="1" value="0"></li>
-         <li><button class="search-button" type="submit">Найти</button></li>
-       </ul>
+           <input type="text" name="kids-count" id="kids-count" min="0" step="1" value="0"></li>
+          </div>
+        </ul>
+         <button class="search-button" type="submit">Найти</button>
+        </div>
+    </div>
      </form>
    </section>
  </body>
