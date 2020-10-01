@@ -9,7 +9,7 @@
 }
 
 .page {
-  min-width: 1280px;
+  min-width: 1200px;
   background-color: var(--basic-grey);
 
 }
@@ -49,7 +49,6 @@
   height: 57px;
   z-index: 1;
   margin: 0 auto;
-  margin: 0 30px;
 }
 
 .visually-hidden {
@@ -88,10 +87,6 @@
   padding: 15px 75px;
 }
 
-.site-nav-link:link {
-  color: var(--basic-black);
-}
-
 .site-nav-link:hover {
   color: var(--basic-blue);
 }
@@ -100,6 +95,7 @@
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+
 
 
 /* main */
