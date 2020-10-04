@@ -11,98 +11,66 @@
 
  <body class="page-body">
    <header class="main-header">
-     <div class="main-nav-wrapper">
-       <nav class="main-nav">
-         <div class="main-nav-logo">
-           <img src="img/logo.png" width="138" height="70" alt="City of Sedona"></div>
-         <div class="site-nav-wrapper">
-           <ul class="site-nav">
-             <li><a class="site-nav-link" href="#">Информация</a></li>
-             <li><a class="site-nav-link" href="#">Фото и видео</a></li>
-           </ul>
-         </div>
-         <div class="site-nav-wrapper-right">
-           <ul class="site-nav-right">
-             <li><a class="site-nav-link" href="#">Карта штата</a></li>
-             <li><a class="site-nav-link" href="hotels.html">Гостиницы</a></li>
-           </ul>
-         </div>
-       </nav>
-     </div>
+     <nav class="main-nav">
+       <img class="main-nav-logo" src="img/logo.png" width="138" height="70" alt="City of Sedona">
+       <ul class="site-nav">
+         <li><a class="site-nav-link" href="#">Информация</a></li>
+         <li><a class="site-nav-link" href="#">Фото и видео</a></li>
+       </ul>
+       <ul class="site-nav-right">
+         <li><a class="site-nav-link" href="#">Карта штата</a></li>
+         <li><a class="site-nav-link" href="hotels.html">Гостиницы</a></li>
+       </ul>
+     </nav>
    </header>
    <main class="container">
      <div class="main-background">
-       <img src="img/main-background-photo.jpg" width="1200" height="509"
-         alt="Welcome to the georgeous Sedona, because the grand canyon sucks!">
-       <svg class="background-svg" width="1200" height="57" fill="none" xmlns="http://www.w3.org/2000/svg">
-         <path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff" />
-       </svg>
+       <h1 class="visually-hidden">Welcome to the georgeous Sedona, because the grand canyon sucks!</h1>
      </div>
-     <h1 class="visually-hidden">Welcome to the georgeous Sedona, because the grand canyon sucks!</h1>
      <section class="reasons">
-       <h2 class="main-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+       <h2 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
        <p class="reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-       <div class="reasons-with-image-wrapper">
-         <ul class="reasons-list">
-           <li class="reasons-item">
-             <h2 class="reasons-item-title">Настоящий городок</h2>
-             <p class="reasons-item-text">— №1 —</p>
-             <p class="reasons-item-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-           </li>
-           <li><img class="reasons-item-image" src="img/first-reason-image.jpg" width="800" height="256" alt="Седона">
-           </li>
-         </ul>
+       <div class="first-reason">
+         <h2 class="reasons-item-title-first">Настоящий городок</h2>
+         <p class="reasons-item-text-first">— №1 —</p>
+         <p class="reasons-item-text-first">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
        </div>
-       <div class="reasons-list-row-icon-wrapper">
-         <ul class="reasons-list-row-icon">
-           <li class="reasons-item-row-icon">
-             <!--иконка дома декоративная, добавим ее с помощю css позже-->
-             <h3 class="reasons-item-title">Жилье</h3>
-             <p class="reasons-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-           </li>
-           <li class="reasons-item-row-icon">
-             <!--иконка бургера декоративная, добавим ее с помощю css позже-->
-             <h3 class="reasons-item-title">Еда</h3>
-             <p class="reasons-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-           </li>
-           <li class="reasons-item-row-icon">
-             <!--иконка сувениров декоративная, добавим ее с помощю css позже-->
-             <h3 class="reasons-item-title">Сувениры</h3>
-             <p class="reasons-item-text">Не только китайского, но и местного производства!</p>
-           </li>
-         </ul>
+       <ul class="reasons-list-row-icon">
+         <li class="reasons-item-row-icon">
+           <h3 class="reasons-item-title">Жилье</h3>
+           <p class="reasons-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+         </li>
+         <li class="reasons-item-row-icon">
+           <h3 class="reasons-item-title">Еда</h3>
+           <p class="reasons-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+         </li>
+         <li class="reasons-item-row-icon">
+           <h3 class="reasons-item-title">Сувениры</h3>
+           <p class="reasons-item-text">Не только китайского, но и местного производства!</p>
+         </li>
+       </ul>
+       <div class="second-reason">
+         <h2 class="reasons-item-title-reverse">Там есть<br> Мост дьявола</h2>
+         <p class="reasons-item-text-reverse">— №2 —</p>
+         <p class="reasons-item-text-reverse">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
        </div>
-       <div class="reasons-with-image-reverse-wrapper">
-         <ul class="reasons-with-image-reverse">
-           <li class="reasons-item-image">
-             <img src="img/second-reason-image.jpg" width="800" height="256" alt="Мост дьявола">
-           </li>
-           <li class="reasons-item-reverse">
-             <h2 class="reasons-item-title-reverse">Там есть Мост дьявола</h2>
-             <p class="reasons-item-text-reverse">— №2 —</p>
-             <p class="reasons-item-text-reverse">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-           </li>
-         </ul>
-       </div>
-       <div class="reasons-list-row-wrapper">
-         <ul class="reasons-list-row">
-           <li class="reasons-item-row">
-             <h3 class="reasons-item-title-row">небольшая площадь</h3>
-             <p class="reasons-item-text">— №3 —</p>
-             <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
-           </li>
-           <li class="reasons-item-row">
-             <h3 class="reasons-item-title-row">Красивая дорога</h3>
-             <p class="reasons-item-text">— №4 —</p>
-             <p class="reasons-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-           </li>
-           <li class="reasons-item-row">
-             <h3 class="reasons-item-title-row">Мало туристов</h3>
-             <p class="reasons-item-text">— №5 —</p>
-             <p class="reasons-item-text">Большинство едет в гранд каньон и толпится там</p>
-           </li>
-         </ul>
-       </div>
+       <ul class="reasons-list-row">
+         <li class="reasons-item-row">
+           <h3 class="reasons-item-title-row">небольшая площадь</h3>
+           <p class="reasons-item-text">— №3 —</p>
+           <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
+         </li>
+         <li class="reasons-item-row">
+           <h3 class="reasons-item-title-row">Красивая дорога</h3>
+           <p class="reasons-item-text">— №4 —</p>
+           <p class="reasons-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+         </li>
+         <li class="reasons-item-row">
+           <h3 class="reasons-item-title-row">Мало туристов</h3>
+           <p class="reasons-item-text">— №5 —</p>
+           <p class="reasons-item-text">Большинство едет в гранд каньон и&nbsp;толпится там</p>
+         </li>
+       </ul>
      </section>
      <section class="hotel-search-section">
        <h2 class="hotel-search-title">Заинтересовались?</h2>
@@ -117,9 +85,21 @@
        <p class="contacts-text">#visitSEDONA
          <a class="contacts-phone" href="tel:+7(495)666-01-66">+7(495)666-01-66</a></p>
        <ul class="footer-social">
-         <li><a class="social-button" href="#">Twitter</a></li>
-         <li><a class="social-button" href="#">Facebook</a></li>
-         <li><a class="social-button" href="#">Youtube</a></li>
+         <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
+             <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                 d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z"
+                 fill="#fff" />
+             </svg></a></li>
+         <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
+             <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" />
+             </svg></a></li>
+         <li><a class="social-button" href="#"><span class="visually-hidden">Youtube</span>
+             <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                 d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="#fff" />
+             </svg></a></li>
        </ul>
        <p class="contacts-site">Website by
          <a class="contacts-site-link" href="https://htmlacademy.ru/intensive/htmlcss"><img
