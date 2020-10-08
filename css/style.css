@@ -380,39 +380,52 @@
 
 /* footer */
 
-.contacts {
-  margin-top: 23px;
+.page-footer {
+  width: 1200px;
   display: flex;
   justify-content: space-around;
-
+  height: 120px;
 }
 
 .contacts-text,
 .contacts-phone {
-  width: 250px;
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 32px;
   text-decoration: none;
   color: var(--basic-black);
-  flex-wrap: wrap;
   text-align: center;
+  margin-left: 111px;
+}
+
+.contacts-text {
+  margin-top: 23px;
+}
+
+.contacts-phone {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-social {
-  width: 150px;
+  min-width: 150px;
   list-style: none;
   display: flex;
   justify-content: space-around;
   padding: 0;
   margin: 0 auto;
+  margin-top: 35px;
+  flex-wrap: wrap;
 }
 
 
 .contacts-site {
-  font-weight: normal;
+  position: relative;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+  margin-right: 260px;
+  margin-top: 45px;
 }
 
 .social-button {
@@ -423,6 +436,14 @@
   width: 46px;
   height: 48px;
 }
+
+.contacts-site-link::after {
+  content: url(../img/logo-htmlacademy.svg);
+  position: absolute;
+  bottom: 25px;
+  margin-left: 6px;
+}
+
 
 /*hotels.html*/
 
@@ -571,13 +592,14 @@
 .item-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   max-height: 100%;
-  outline: 2px solid tomato;
+
   margin: 0;
-  padding: 0; 
+  padding: 0;
   max-width: 1200px;
   margin-left: 29px;
+
 }
 
 
@@ -586,13 +608,22 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content;
-  align-content:start;
+  align-content: start;
   height: 150px;
   max-width: 1200px;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--light-grey);
-} 
+}
+
+.hotels-list-paragraph {
+
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+}
 
 .hotel-second-type {
   font-weight: normal;
@@ -600,6 +631,11 @@
   line-height: 21px;
   color: var(--text-grey);
   width: 240px;
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+
 }
 
 .span {
@@ -608,11 +644,12 @@
 }
 
 .hotels-list-item-image {
-  
+
   margin: 0;
   padding: 0;
   margin-top: 30px;
   margin-left: 73px;
+  margin-bottom: 30px;
 }
 
 .links-and-rating {
@@ -620,9 +657,9 @@
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  outline: 2px solid green;
   align-items: center;
-  
+
+
 }
 
 .links {
@@ -631,7 +668,6 @@
   grid-template-columns: min-content min-content;
   grid-template-rows: min-content;
   grid-gap: 6px;
-  outline: 2px solid red;
 }
 
 .rating {
