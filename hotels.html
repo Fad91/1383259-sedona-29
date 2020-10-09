@@ -30,32 +30,35 @@
         <fieldset class="infrastructure">
           <legend class="hotels-filter-title">Инфраструктура:</legend>
           <ul class="hotels-filter-list">
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
               <label class="hotels-filter-label" for="pool">Бассейн</label></li>
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="parking" id="parking">
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="parking">
               <label class="hotels-filter-label" for="parking">Парковка</label></li>
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
               <label class="hotels-filter-label" for="wi-fi">Wi-Fi</label></li>
           </ul>
         </fieldset>
         <fieldset class="type-of-hotel">
           <legend class="hotels-filter-title">Тип жилья:</legend>
           <ul class="hotels-filter-list">
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="hotel" id="hotel"
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="hotel"
                 checked>
               <label class="hotels-filter-label" for="hotel">Гостиница</label></li>
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="motel" id="motel"
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="motel"
                 checked>
               <label class="hotels-filter-label" for="motel">Мотель</label></li>
-            <li class="hotels-filter-item"><input class="visually-hidden" type="checkbox" name="apartments"
+            <li class="hotels-filter-item"><input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments"
                 id="apartments" checked>
               <label class="hotels-filter-label" for="apartments">Апартаменты</label></li>
           </ul>
         </fieldset>
         <div class="cost-filter">
-          <label class="hotels-filter-title" for="costperday">Стоимость в сутки(Р):</label>
-          <output name="costperday">От 0</output>
-          <output name="costperday">До 3000</output>
+          <div class="price-controls">
+          <label class="hotels-filter-title" for="min-price max-price">Стоимость в сутки (Р):</label>
+          <input class="price-input" type="text" name="min-price" value="От 0">
+          <input class="price-input" type="price-input" name="max-price" value="До 3000">
+        </label>
+      </div>
           <input type="range" id="costperday" name="costperday" min="0" max="3000" step="1">
           <button class="filter-button" type="submit">Показать</button>
         </div>
@@ -70,6 +73,18 @@
           <li class="sort-item"><a class="sort-item-link" href="#">По цене</a></li>
           <li class="sort-item"><a class="sort-item-link" href="#">По типу</a></li>
           <li class="sort-item"><a class="sort-item-link" href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="icon-link-list">
+          <li class="icon-link-item"><a class="icon-link-up" href="#"><svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/>
+          </svg>
+        </a>
+      </li>
+          <li class="icon-link-item"><a class="icon-link-down" href="#"><svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0h11" fill="#81B3D2"/>
+          </svg>
+        </a>
+      </li>
         </ul>
       </div>
       <ul class="hotels-list">
@@ -128,16 +143,22 @@
             <path
               d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z"
               fill="#fff" />
-          </svg></a></li>
+          </svg>
+        </a>
+      </li>
       <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
           <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" />
-          </svg></a></li>
+          </svg>
+        </a>
+      </li>
       <li><a class="social-button" href="#"><span class="visually-hidden">Youtube</span>
           <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="#fff" />
-          </svg></a></li>
+          </svg>
+        </a>
+      </li>
     </ul>
     <p class="contacts-site">Website by
       <a class="contacts-site-link" href="https://htmlacademy.ru/intensive/htmlcss">
