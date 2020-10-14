@@ -546,10 +546,12 @@
 
 
 .filter-input-checkbox:checked+.hotels-filter-label::after {
-  content: url(../img/checkbox-icon.svg);
+  background-image: url(../img/checkbox-icon.svg);
   position: absolute;
   left: 0px;
   z-index: 1;
+  content: "";
+  display: block;
 }
 
 
@@ -623,7 +625,7 @@
 
 
 .range-controls .toggle:hover {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .range-controls .toggle-max {
@@ -632,13 +634,15 @@ transform: scale(1.2);
 
 .scale {
   height: 2px;
-  background: var(--basic-white);
+  background: var(--opacity-white);
+
 }
 
 .range-controls .bar {
   height: 2px;
   width: 80%;
   z-index: 1;
+  background: var(--basic-white);
 }
 
 .hotels-filter-list {
@@ -797,9 +801,10 @@ transform: scale(1.2);
   fill: var(--basic-black);
 }
 
-.icon-link-item:active path{
+.icon-link-item:active path {
   fill: var(--basic-blue);
 }
+
 .hotels-filter-result-title,
 .hotels-list-link {
   font-weight: 700;
@@ -1067,6 +1072,7 @@ transform: scale(1.2);
 .modal-button {
   width: 100%;
   height: 85px;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   font-weight: 700;
@@ -1120,9 +1126,10 @@ transform: scale(1.2);
   margin-left: 20px;
 }
 
-.tour-date-item-departure{
+.tour-date-item-departure {
   margin-left: 32px;
 }
+
 .calendar-icon {
   position: absolute;
   top: 10px;
@@ -1135,7 +1142,7 @@ transform: scale(1.2);
   margin-right: 38px;
   padding-top: 11px;
   padding-bottom: 15px;
-  
+
 }
 
 
