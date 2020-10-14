@@ -1032,6 +1032,7 @@
   animation: show 0.5s;
 }
 
+
 @keyframes show {
   0% {
     transform: translateY(1000px)
@@ -1051,6 +1052,7 @@
 
   ;
 }
+
 
 .modal-title,
 .search-button {
@@ -1142,7 +1144,6 @@
   margin-right: 38px;
   padding-top: 11px;
   padding-bottom: 15px;
-
 }
 
 
