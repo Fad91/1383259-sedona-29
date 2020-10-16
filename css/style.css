@@ -113,6 +113,10 @@
   width: 144px;
 }
 
+.site-nav-link-active{
+  color: var(--basic-brown);
+}
+
 .site-nav-link:first-child {
   margin-left: 64px;
 
@@ -1027,6 +1031,12 @@
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px dotted var(--basic-blue);
+}
+
+.sort-item-link-active{
+  border: none;
+  color: var(--basic-blue);
+  opacity: 1;
 }
 
 .sort-item-link:hover,
