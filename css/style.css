@@ -168,13 +168,13 @@
   line-height: 26px;
   height: 80px;
   margin: auto;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .reasons-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   margin: auto;
 }
 
@@ -425,7 +425,7 @@
 }
 
 .contacts-text {
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .contacts-text,
@@ -433,7 +433,7 @@
   width: 341px;
   font-weight: 700;
   font-size: 21px;
-  line-height: 35px;
+  line-height: 26px;
   text-decoration: none;
   color: var(--basic-black);
   text-align: center;
@@ -444,6 +444,7 @@
   margin: 0;
   padding: 0;
   font-size: 21px;
+  padding-top: 10px;
 }
 
 .footer-social {
@@ -1136,7 +1137,7 @@
   line-height: 26px;
   padding: 0;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .tour-date-item {
@@ -1151,6 +1152,7 @@
   background: var(--middle-grey);
   text-transform: inherit;
   font-weight: inherit;
+  line-height: 26px;
   margin-right: 35px;
   margin-left: 20px;
   padding-left: 12px;
@@ -1159,7 +1161,7 @@
 
 .tour-date-item-departure {
   margin-left: 37px;
-  margin-top: 11px;
+  margin-top: 8px;
 }
 
 .departure-input {
@@ -1179,7 +1181,7 @@
 .calendar-button {
   position: absolute;
   top: 8px;
-  right: 68px;
+  right: 66px;
   background: none;
   border: none;
   color: none;
@@ -1189,7 +1191,7 @@
 
 .calendar-button-departure {
   top: 12px;
-  right: 68px;
+  right: 66px;
 }
 
 .calendar-icon-departure {
@@ -1222,10 +1224,11 @@
   border: none;
   background: var(--middle-grey);
   width: 33px;
-  padding: 11px 39px 11px 39px;
+  padding: 5px 39px 5px 39px;
   margin-left: 39px;
   text-align: center;
   font-weight: 700;
+  line-height: 26px;
 }
 
 .tourist-counter-item-adults {
@@ -1292,11 +1295,11 @@
   display: flex;
   justify-content: center;
   width: 460px;
-  margin: 0 auto;
+  margin: auto;
   background: var(--basic-blue);
   text-align: center;
   padding: 16px 185px 16px 182px;
-  margin-top: 55px;
+  margin-top: 56px;
   margin-bottom: 35px;
   text-transform: uppercase;
   color: var(--basic-white);
