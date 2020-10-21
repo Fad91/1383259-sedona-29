@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -40,7 +40,7 @@
         alt="Welcome to the georgeous Sedona, because the grand canyon sucks!">
     </div>
     <section class="reasons">
-      <h2 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h2 class="main-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
       <p class="reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <div class="first-reason">
         <div class="first-reason-text-wrapper">
@@ -48,7 +48,7 @@
           <p class="item-number">— №1 —</p>
           <p class="reasons-item-text-first">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img src="img/first-reason-image.jpg" width="800" height="256" alt="Вид на Ратушу">
+        <img class="first-reason-image" src="img/first-reason-image.jpg" width="800" height="256" alt="Вид на Ратушу">
       </div>
       <ul class="reasons-list-row-icon">
         <li class="reasons-item-row-icon">
@@ -82,7 +82,6 @@
           <h3 class="reasons-item-title-row">Красивая дорога</h3>
           <p class="reasons-item-text">— №4 —</p>
           <p class="reasons-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
         <li class="reasons-item-row">
           <h3 class="reasons-item-title-row">Мало туристов</h3>
           <p class="reasons-item-text">— №5 —</p>
@@ -109,7 +108,7 @@
             <li class="tour-date-item">
               <label class="tour-date-label" for="arrival-date">Дата заезда:</label>
               <input class="tour-date-input" type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2017">
-              <button type="button" class="calendar-button">
+              <button type="button" class="calendar-button" aria-label="Выбор даты заезда">
                 <svg class="calendar-icon" width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.4 3h2.9c1 0 1.7.8 1.7 1.9v16.3c0 1-.8 1.8-1.7 1.8H1.7c-1 0-1.7-.8-1.7-1.8V4.9C0 3.9.8 3 1.8 3h2.8V1.6c0-.3.3-.6.7-.6.3 0 .6.3.6.6V3h4V1.6c0-.3.2-.6.6-.6.4 0 .7.3.7.6V3H15V1.6c0-.3.3-.6.7-.6.3 0 .6.3.6.6V3zm3.2 18.5V4.9c0-.3-.1-.5-.3-.5h-2.9v1.4c0 .4-.3.7-.6.7a.7.7 0 01-.7-.7V4.4h-4v1.4c0 .4-.2.7-.6.7a.7.7 0 01-.7-.7V4.4H6v1.4c0 .4-.3.7-.6.7a.7.7 0 01-.7-.7V4.4H1.8c-.3 0-.5.2-.5.5v16.3c0 .2.2.4.4.4h17.6l.3-.1z"
@@ -124,7 +123,7 @@
               <label for="departure-date">Дата выезда:</label>
               <input class="tour-date-input departure-input" type="text" name="departure-date" id="departure-date"
                 value=" 4 Июля 2017">
-              <button type="button" class="calendar-button calendar-button-departure">
+              <button type="button" class="calendar-button calendar-button-departure" aria-label="Выбор даты выезда">
                 <svg class="calendar-icon-departure" width="21" height="23" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -140,13 +139,13 @@
           <ul class="tourist-counter-list">
             <li class="tourist-counter-item-adults">
               <label for="adults-count">Взрослые:</label>
-              <button type="button" class="minus-button">
+              <button type="button" class="minus-button" aria-label="Уменьшить">
                 <svg class="minus-icon" width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#A9A9A9" d="M0 0h12v3H0z" />
                 </svg>
               </button>
               <input class="tourist-counter-input" type="text" name="adults-count" id="adults-count" value="2">
-              <button type="button" class="plus-button">
+              <button type="button" class="plus-button" aria-label="Увеличить">
                 <svg class="plus-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 6.8V11h2.6V6.8H11V4.2H6.8V0H4.2v4.2H0v2.6h4.2z"
                     fill="#A9A9A9" />
@@ -155,14 +154,14 @@
             </li>
             <li class="tourist-counter-item">
               <label for="kids-count">Дети:</label>
-              <button type="button" class="minus-button">
+              <button type="button" class="minus-button" aria-label="Уменьшить">
                 <svg class="minus-icon" width="12" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#A9A9A9" d="M0 0h12v3H0z" />
                 </svg>
               </button>
               <input class="tourist-counter-input kids-count-input" type="text" name="kids-count" id="kids-count"
                 value="0">
-              <button type="button" class="plus-button">
+              <button type="button" class="plus-button" aria-label="Увеличить">
                 <svg class="plus-icon" width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4.2 6.8V11h2.6V6.8H11V4.2H6.8V0H4.2v4.2H0v2.6h4.2z"
                     fill="#A9A9A9" />
@@ -177,7 +176,7 @@
   </main>
   <footer class="page-footer">
     <p class="contacts-text">#visitSEDONA
-      <a class="contacts-phone" href="tel:+7(495)666-01-66">Тел: +7(495) 666-01-66</a>
+      <a class="contacts-phone" href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
     </p>
     <ul class="footer-social">
       <li class="footer-social-item">
