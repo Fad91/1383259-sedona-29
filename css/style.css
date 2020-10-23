@@ -165,7 +165,7 @@
 }
 
 .main-title {
-  min-width: 470px;
+  width: 470px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -181,6 +181,7 @@
   line-height: 26px;
   margin: auto;
   color: var(--text-grey);
+  padding: 0 20px;
 }
 
 /* Первая причина */
@@ -223,7 +224,7 @@
 }
 
 .first-reason-image {
-  height: auto;
+  height: 256px;
 }
 
 .first-reason-text-wrapper .item-number {
@@ -532,7 +533,7 @@
   height: 100%;
   width: 1200px;
   z-index: 0;
-  padding: 25px 62px 5px 60px;
+  padding: 25px 62px 5px 59px;
   box-sizing: border-box;
 }
 
@@ -587,7 +588,7 @@
 }
 
 .infrastructure .hotels-filter-title {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .hotels-filter-item:last-child {
@@ -678,7 +679,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   position: relative;
 }
 
@@ -851,7 +852,7 @@
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--light-grey);
-  margin-left: 73px;
+  padding-left: 73px;
   position: relative;
 }
 
@@ -927,7 +928,7 @@
   margin: 0;
   padding-top: 3px;
   text-align: center;
-  
+
 }
 
 .details-link,
@@ -1017,7 +1018,7 @@
   color: var(--basic-black);
   text-decoration: none;
   position: relative;
-  padding-right: 30px;
+  padding-right: 120px;
   display: block;
 }
 
@@ -1070,56 +1071,44 @@
 }
 
 .modal-error {
-  animation: error, 5s;
+  position: relative;
+  animation: validate-error 0.6s;
 }
 
 @-webkit-keyframes show {
   0% {
-    transform: translateY(-1000px)
+    transform: translateY(-1000px);
   }
-
-  ;
 
   40% {
-    transform: translateY(-500px)
+    transform: translateY(-500px);
   }
-
-  ;
 
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
-
-  ;
 }
 
 @keyframes show {
   0% {
-    transform: translateY(-1000px)
+    transform: translateY(-1000px);
   }
-
-  ;
 
   40% {
-    transform: translateY(-500px)
+    transform: translateY(-500px);
   }
-
-  ;
 
   100% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
-
-  ;
 }
 
-@keyframes error {
+@keyframes validate-error {
+
   0%,
   100% {
     transform: translateX(0);
   }
-
-  ;
 
   10%,
   30%,
@@ -1129,16 +1118,12 @@
     transform: translateX(-20px);
   }
 
-  ;
-
   20%,
   40%,
   60%,
   80% {
     transform: translateX(20px);
   }
-
-  ;
 }
 
 .modal-title,
